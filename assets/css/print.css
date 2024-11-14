@@ -1,0 +1,193 @@
+@media print {
+            body {-webkit-print-color-adjust: exact !important;}
+
+            header nav, footer {
+            display: none !important;
+            }
+            @page {
+                size:A4 landscape;
+                margin-left: 10px !important;
+                margin-right: 10px !important;
+                margin-top: 0px !important;
+                margin-bottom: 0px !important;
+                -webkit-print-color-adjust: exact !important;
+            }      
+            * {
+                      -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
+                      color-adjust: exact !important;                 /*Firefox*/
+                  }
+            /*DIAMONDS PRINT START*/
+            .print-header {
+            float: left;
+            width: 100%;
+            }
+            .header-container {
+            display: table;
+            width: 100%;
+            }
+            .print-header h2,
+            .print-header h4 {
+            margin: 10px !important;
+            padding: 0;
+            }
+            .print-header .header-title, .print-header .header-date {
+            display: table-cell;
+            text-align: left;
+            vertical-align: middle;
+            color: #fff !important;
+            }
+            .print-header .header-date {
+            text-align: right;
+            }
+            .print-header h2 {
+            font-size: 22px;
+            font-weight: 400;
+            }
+            .print-header h4 {
+            font-size: 18px;
+            font-weight: 400;
+            }
+            .header-container {
+            display: table;
+            width: 100%;
+            margin: 0 auto;
+            }
+            .diamonds-print-preview {
+            float: left;
+            width: 100%;
+            background: #f7f7f7 !important;
+            border: 1px solid #e8e8e8 !important;
+            box-sizing: border-box;
+            padding: 5px;
+            margin-top: 9px;
+            }
+            .diamonds-print-preview .diamond-info-one, .diamonds-print-preview .diamond-info-two {
+            float: left;
+            width: 50%;
+            text-align: center;
+            padding: 6px;
+            box-sizing: border-box;
+            padding-bottom: 0px !important;
+            }
+            .diamonds-print-preview .print-info {
+            float: left;
+            width: 100%;
+            text-align: center;
+            margin: 5px 0;
+            }
+            .diamonds-print-preview .print-info span {
+            font-size: 16px;
+            color: #000 !important;
+            }
+            .diamonds-print-preview .print-info p {
+            font-size: 18px;
+            color: #000 !important;
+            font-weight: 600;
+            margin-bottom: 0px !important; 
+            }
+            .diamonds-print-preview .print-info p span {
+            font-size: 18px;
+            color: #1979c3 !important;
+            }
+            .diamonds-grade-info {
+            display: table-cell;
+            vertical-align: middle;
+            }
+            .diamonds-grade {
+            display: table-cell;
+            vertical-align: middle;
+            width: 80px;
+            }
+            .print-diamond-certifications {
+                float: left;
+                width: 100%;
+                clear: both;
+                background: #e8e8e8 !important;
+                padding: 5px;
+                box-sizing: border-box;
+                margin-top: 8px;
+                border: 1px solid #e8e8e8 !important;
+                margin-bottom: 7px;
+            }
+            .diamonds-grade-info p {
+            margin: 0;
+            padding: 0;
+            font-size: 15px;
+            color: #000 !important;
+            }
+            .print-details {
+            float: left;
+            width: 100%;
+            clear: both;
+            border: 1px solid #e8e8e8 !important;
+            }
+            .diamond-title {
+            background: #1979c3 !important;
+            display: table;
+            width: 100%;
+            vertical-align: middle;
+            padding: 10px 10px;
+            box-sizing: border-box;
+            }
+            .diamond-title h2 {
+            color: #fff !important;
+            font-size: 20px;
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
+            }
+            .diamond-title p {
+            color: #fff !important;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+            margin-top: 5px;
+            }
+            .diamond-title .diamond-name {
+            display: table-cell;
+            vertical-align: middle;
+            }
+            .diamond-title .diamond-price {
+            display: table-cell;
+            vertical-align: middle;
+            }
+            .diamond-title .diamond-price span{
+            font-size: 16px;
+            color: #fff !important;
+            }
+            .diamond-inner-details {
+            float: left;
+            width: 100%;
+            }
+            .diamond-inner-details ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            }
+            .diamond-inner-details ul li {
+            float: left;
+            width: 100%;
+            padding: 7px 15px;
+            box-sizing: border-box;
+            border-bottom: 1px solid #e8e8e8;
+            margin-bottom: 0px !important;
+            margin-top: 0px !important;
+            }
+            .diamond-inner-details ul li div {
+            float: left;
+            width: 50%;
+            text-align: left;
+            }
+            .diamond-inner-details ul li .diamond-quality {
+            text-align: right;
+            }
+            .diamond-specifications p {
+            font-size: 14px;
+            color: #000 !important;
+            font-weight: 500;
+            margin: 0;
+            padding: 0;
+            }
+            .diamond-inner-details ul li:last-child {
+            border: 0;
+            }}
