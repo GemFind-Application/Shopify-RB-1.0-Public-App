@@ -1638,7 +1638,7 @@ if ($recurring_charges_data->charge_id) {
 	var AppBridge = window['app-bridge'];
 	var createApp = AppBridge.default;
 	var app = createApp({
-		apiKey: 'df75bd99a61659fb1c7854581732af84',
+		apiKey: API_KEY,
 		shopOrigin: "<?php echo $_GET['shop']; ?>"
 	});
 </script>

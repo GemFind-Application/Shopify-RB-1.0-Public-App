@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 |--------------------------------------------------------------------------
@@ -24,24 +24,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $base_url = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
-$base_url .= "://". @$_SERVER['HTTP_HOST'];
-$base_url .= @str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
+$base_url .= "://" . @$_SERVER['HTTP_HOST'];
+$base_url .= @str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
 $config['base_url'] = $base_url;
 
 
 
-$config['api_key'] = "df75bd99a61659fb1c7854581732af84";
-$config['shared_secret'] = "03b62e962c98cc5b32299e114a9e10ce";
+$config['api_key'] = API_KEY;
+$config['shared_secret'] = SECRET_KEY;
 $config['scopes'] = "read_orders,write_products,write_inventory,write_orders,read_locations,read_themes";
 
 //$config['base_uri'] = "https://29d65b72.ngrok.io/diamondlink";
 
-$config['redirect_uri'] = $config['base_url']."connect";
-$config['app_install_url'] = $config['base_url']."install";
+$config['redirect_uri'] = $config['base_url'] . "connect";
+$config['app_install_url'] = $config['base_url'] . "install";
 
 //$config['navigation_api'] = "http://api.jewelcloud.com/api/RingBuilder/GetNavigation?";
 
-$config['final_shop_url'] = "https://".$_GET['shop'].$_GET['path_prefix'];
+$config['final_shop_url'] = "https://" . $_GET['shop'] . $_GET['path_prefix'];
 $config['shopify_api_version'] = '2022-10';
 /*
 |--------------------------------------------------------------------------
@@ -70,7 +70,7 @@ $config['index_page'] = 'index.php';
 |
 | WARNING: If you set this to 'PATH_INFO', URIs will always be URL-decoded!
 */
-$config['uri_protocol']	= 'REQUEST_URI';
+$config['uri_protocol']    = 'REQUEST_URI';
 
 /*
 |--------------------------------------------------------------------------
@@ -94,7 +94,7 @@ $config['url_suffix'] = '';
 | than english.
 |
 */
-$config['language']	= 'english';
+$config['language']    = 'english';
 
 /*
 |--------------------------------------------------------------------------
@@ -418,11 +418,11 @@ $config['sess_regenerate_destroy'] = FALSE;
 |       'cookie_httponly') will also affect sessions.
 |
 */
-$config['cookie_prefix']	= '';
-$config['cookie_domain']	= '';
-$config['cookie_path']		= '/';
-$config['cookie_secure']	= FALSE;
-$config['cookie_httponly'] 	= FALSE;
+$config['cookie_prefix']    = '';
+$config['cookie_domain']    = '';
+$config['cookie_path']        = '/';
+$config['cookie_secure']    = FALSE;
+$config['cookie_httponly']     = FALSE;
 
 /*
 |--------------------------------------------------------------------------

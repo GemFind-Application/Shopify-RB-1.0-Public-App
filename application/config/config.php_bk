@@ -30,7 +30,7 @@ $config['base_url'] = $base_url;
 
 
 
-$config['api_key'] = "df75bd99a61659fb1c7854581732af84";
+$config['api_key'] = API_KEY;
 $config['shared_secret'] = "03b62e962c98cc5b32299e114a9e10ce";
 $config['scopes'] = "read_orders,write_products,write_inventory,write_orders,read_locations,read_themes";
 
